@@ -1,8 +1,17 @@
 const canvas = document.querySelector(".white-canvas")
-const size16x16 = 256;
+const defaultSize = 16;
 
-for(let i = 0; i < size16x16; i++) {
+console.log(canvas);
+
+for(let i = 0; i < defaultSize*defaultSize; i++) {
     const pixel = document.createElement("div");
     pixel.className = "pixel";
     canvas.appendChild(pixel);
 }
+
+canvas.addEventListener('mouseout', (event) => {
+    let target = event.target;
+    if(target.className === "pixel") {
+        target.style.backgroundColor = "black";
+    }
+});

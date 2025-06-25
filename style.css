@@ -13,12 +13,10 @@ body {
     width: 500px;
     display: flex;
     flex-wrap: wrap;
-    flex: 1;
 }
 
 .pixel {
     aspect-ratio: 1 / 1;
-    border: 1px solid black;
     flex: 0 0 6.25%;
 }
 
