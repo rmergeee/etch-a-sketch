@@ -32,7 +32,7 @@ function changeSizeCanvas() {
 
     do {
         size = prompt("Select the size of the canvas side(no more than 100): ");
-    } while (size > 100);
+    } while (size > 100 && size > 0);
     defaultSize = size;
 
     for(let i = 0; i < defaultSize*defaultSize; i++) {
